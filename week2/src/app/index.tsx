@@ -4,6 +4,8 @@ import { RootStackParamList } from "../navigation/types";
 import LoginScreen from "../screens/LoginScreen";
 import RegisterScreen from "../screens/RegisterScreen";
 import HomeScreen from "../screens/HomeScreen";
+import ForgotPasswordScreen from "../screens/ForgotPasswordScreen";
+import ResetPasswordScreen from "../screens/ResetPasswordScreen";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -19,6 +21,8 @@ export default function App() {
           headerShown: false,
         }}
       />
+      <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
+      <Stack.Screen name="ResetPassword" component={ResetPasswordScreen} />
     </Stack.Navigator>
   );
 }

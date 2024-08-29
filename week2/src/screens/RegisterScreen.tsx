@@ -17,9 +17,15 @@ const RegisterScreen: React.FC<Props> = ({ navigation }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleRegister = async () => {
     try {
+      if (password !== confirmPassword) {
+        Alert.alert("Error", "Passwords do not match");
+        return;
+      }
+
       const response = await fetch(
         "https://food-app-api-demo.onrender.com/api/users/",
         {
@@ -66,6 +72,13 @@ const RegisterScreen: React.FC<Props> = ({ navigation }) => {
         placeholder="Password"
         value={password}
         onChangeText={setPassword}
+        secureTextEntry
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Confirm Password"
+        value={confirmPassword}
+        onChangeText={setConfirmPassword}
         secureTextEntry
       />
       <TouchableOpacity style={styles.button} onPress={handleRegister}>

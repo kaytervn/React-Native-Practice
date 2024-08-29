@@ -5,6 +5,8 @@ export type RootStackParamList = {
   Register: undefined;
   Home: undefined;
   Homepage: undefined;
+  ForgotPassword: undefined;
+  ResetPassword: { email: string };
 };
 
 export type LoginScreenNavigationProp = StackNavigationProp<
@@ -25,4 +27,14 @@ export type HomeScreenNavigationProp = StackNavigationProp<
 export type HomepageScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
   "Homepage"
+>;
+
+export type ForgotPasswordScreenNavigationProp = StackNavigationProp<
+  RootStackParamList,
+  "ForgotPassword"
+>;
+
+export type ResetPasswordScreenNavigationProp = StackNavigationProp<
+  RootStackParamList,
+  "ResetPassword"
 >;

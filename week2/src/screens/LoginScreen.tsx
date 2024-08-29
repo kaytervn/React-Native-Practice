@@ -68,6 +68,12 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
       <TouchableOpacity
+        style={styles.forgotPasswordLink}
+        onPress={() => navigation.navigate("ForgotPassword")}
+      >
+        <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
         style={styles.registerLink}
         onPress={() => navigation.navigate("Register")}
       >
@@ -78,6 +84,12 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
+  forgotPasswordLink: {
+    marginTop: 10,
+  },
+  forgotPasswordText: {
+    color: "blue",
+  },
   container: {
     flex: 1,
     justifyContent: "center",
