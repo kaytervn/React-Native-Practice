@@ -11,14 +11,17 @@ export type LoginScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
   "Login"
 >;
+
 export type RegisterScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
   "Register"
 >;
+
 export type HomeScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
   "Home"
 >;
+
 export type HomepageScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
   "Homepage"
