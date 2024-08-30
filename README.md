@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Advanced Mobile Programming</h1>
+## Advanced Mobile Programming
 
 **Full Name:** Kiến Đức Trọng
 
