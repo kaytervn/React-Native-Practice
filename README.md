@@ -1,2 +1,15 @@
-# React-Native-Practice
- 
+# Advanced Mobile Programming
+
+## Information
+
+**Full Name:** Kiến Đức Trọng
+
+**Student ID:** 21110332
+
+## Weekly Excercises
+
+**Week 1:** Setting up the programming environment.
+
+**Week 2:** Design and implement the UI for the registration, login, and password reset features.
+
+**Week 3:** Updating...
