@@ -6,7 +6,7 @@
 
 ---
 
-|            | **Weekly Exercise**                                                                   |
+|            | **Weekly Exercises**                                                                   |
 | ---------- | ------------------------------------------------------------------------------------- |
 | **Week 1** | Setting up the programming environment.                                               |
 | **Week 2** | Design and implement the UI for the registration, login, and password reset features. |
